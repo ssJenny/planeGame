@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/resource.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Preload.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/LoadingPage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/StartPage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/GamePage.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/Bullet.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Plane.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Enemy.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Stage1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Game.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+		<title>飞机游戏</title>
+	</head>
+	<body>
+		<div class="container">
+			<div id="p0" class="page">
+				<div id="loading">0%</div>
+			</div>
+			
+			<div id="p1" class="page">
+				<button type="button" id="startBtn">开始游戏</button>
+			</div>
+			
+			<div id="p2" class="page">
+				<span class="scorespan">分数：<span id="score">0</span></span>
+				<span id="frames">0</span>
+				<div id="touch"></div>
+				
+				<div id="pop">
+					<h2>飞机大战</h2>
+					<p id="show">100</p>
+					<button onclick="game.reset()" ontouchstart="game.reset()">再完一次</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
